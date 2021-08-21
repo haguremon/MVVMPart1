@@ -65,6 +65,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		CF29C29C26D1187E0054A0E8 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
 		CF8D7AFC26D07AEE00075B20 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +91,7 @@
 		CF8D7B0726D07AEE00075B20 /* MVVMPart1 */ = {
 			isa = PBXGroup;
 			children = (
+				CF29C29C26D1187E0054A0E8 /* View Models */,
 				CF29C29926D100B20054A0E8 /* Models */,
 				CF29C29626D0F9B30054A0E8 /* Services */,
 				CF29C29526D0DC830054A0E8 /* Controllers */,

@@ -8,9 +8,15 @@
 import Foundation
 // Codableが使えるけどエンコードしない（返信しないJSONに変更しない）のでDecodable（デコードするよーJOSNをSwiftの方に変更する）を使うよー
 
+struct ArticleList: Decodable {
+    let articles: [Article]
+
+}
+
+//"description": nullの可能性もあるのでオプショナル型に変更した
 struct Article: Decodable {
     
     let title: String
-    let description: String
-    
+    var description: String?
+
 }

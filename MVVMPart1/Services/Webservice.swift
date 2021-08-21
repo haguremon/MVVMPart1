@@ -12,14 +12,24 @@ import Foundation
 
 class webservice {
     //Closureを使ってJsonデータを取得する遅延評価ってやつコールバック
-    func getarticles(url: URL , completion: @escaping ([Any]) -> ()) {
-        
+    func getarticles(url: URL , completion: @escaping ([Article]?) -> ()) {
+                                            //[Article]?にしてる理由は空の場合を考慮してるため
         URLSession.shared.dataTask(with: url) { data, response, error in
+
             guard let data = data ,
                   //let response = response as? HTTPURLResponse,
                   error == nil else { return }
-            print(data)
-        
+    
+            let articleList = try? JSONDecoder().decode(ArticleList.self, from: data)
+            
+            if let articleList = articleList {
+                
+                completion(articleList.articles)
+            
+            }
+            
+            
+            
         } .resume()
         
         
