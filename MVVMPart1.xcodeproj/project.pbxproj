@@ -11,6 +11,7 @@
 		CF29C29826D0FA0C0054A0E8 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF29C29726D0FA0C0054A0E8 /* Webservice.swift */; };
 		CF29C29B26D100EE0054A0E8 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF29C29A26D100EE0054A0E8 /* Article.swift */; };
 		CF29C29E26D13E150054A0E8 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF29C29D26D13E150054A0E8 /* ArticleViewModel.swift */; };
+		CF29C2A126D151420054A0E8 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF29C2A026D151420054A0E8 /* ArticleTableViewCell.swift */; };
 		CF8D7B0926D07AEE00075B20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8D7B0826D07AEE00075B20 /* AppDelegate.swift */; };
 		CF8D7B0B26D07AEE00075B20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8D7B0A26D07AEE00075B20 /* SceneDelegate.swift */; };
 		CF8D7B1026D07AEE00075B20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF8D7B0E26D07AEE00075B20 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		CF29C29726D0FA0C0054A0E8 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		CF29C29A26D100EE0054A0E8 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		CF29C29D26D13E150054A0E8 /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
+		CF29C2A026D151420054A0E8 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		CF8D7B0526D07AEE00075B20 /* MVVMPart1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMPart1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF8D7B0826D07AEE00075B20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF8D7B0A26D07AEE00075B20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,14 @@
 			path = "View Models";
 			sourceTree = "<group>";
 		};
+		CF29C29F26D151000054A0E8 /* Celis */ = {
+			isa = PBXGroup;
+			children = (
+				CF29C2A026D151420054A0E8 /* ArticleTableViewCell.swift */,
+			);
+			path = Celis;
+			sourceTree = "<group>";
+		};
 		CF8D7AFC26D07AEE00075B20 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +108,7 @@
 				CF29C29926D100B20054A0E8 /* Models */,
 				CF29C29626D0F9B30054A0E8 /* Services */,
 				CF29C29526D0DC830054A0E8 /* Controllers */,
+				CF29C29F26D151000054A0E8 /* Celis */,
 				CF8D7B0826D07AEE00075B20 /* AppDelegate.swift */,
 				CF8D7B0A26D07AEE00075B20 /* SceneDelegate.swift */,
 				CF8D7B0E26D07AEE00075B20 /* Main.storyboard */,
@@ -183,6 +194,7 @@
 				CF29C29826D0FA0C0054A0E8 /* Webservice.swift in Sources */,
 				CF29C29E26D13E150054A0E8 /* ArticleViewModel.swift in Sources */,
 				CF29C29426D0DC120054A0E8 /* NewsListTableViewController.swift in Sources */,
+				CF29C2A126D151420054A0E8 /* ArticleTableViewCell.swift in Sources */,
 				CF29C29B26D100EE0054A0E8 /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

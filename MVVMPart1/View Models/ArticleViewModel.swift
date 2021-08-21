@@ -11,13 +11,13 @@
 import Foundation
 
 //*1複数の記事をTableViewに表示するためのVMを作成する
-struct ArticleViewListModel {
+struct ArticleListViewModel {
     //複数の記事の配列型のプロパティを作成
     let articles: [Article]
 
 }
 
-extension ArticleViewListModel {
+extension ArticleListViewModel {
     //セクションの数は今の所　1
     var numberOfSections : Int {
         
@@ -30,7 +30,7 @@ extension ArticleViewListModel {
         return self.articles.count
     
     }
-    //特定の記事を作成して返す機能
+    //特定の記事を作成して返す機能　//cellの所で使うお
     func articleAtIndex(_ index: Int) -> ArticleViewModel {
         
         let article = self.articles[index]
@@ -45,7 +45,7 @@ extension ArticleViewListModel {
 
 
 
-//1　記事を作成するクラス
+//1　一つの記事を作成するVM
 struct ArticleViewModel {
     
     //Articleモデルに参照するプロパティを作成
