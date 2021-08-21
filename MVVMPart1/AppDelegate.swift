@@ -13,7 +13,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        if #available(iOS 13.0, *) {
+               let appearance = UINavigationBarAppearance()
+               appearance.configureWithDefaultBackground()
+               appearance.backgroundColor = .systemGray
+               appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.label]
+               appearance.titleTextAttributes = [.foregroundColor: UIColor.label]
+               // Large Title 用 NavigationBar の色設定
+             UINavigationBar.appearance().scrollEdgeAppearance = appearance
+               // 通常の NavigationBar の色設定
+            UINavigationBar.appearance().standardAppearance = appearance
+           } else {
+               // iOS 13 未満はこれまで通り
+            UINavigationBar.appearance().barTintColor = .systemGray
+           }
+     
+        
+//        UINavigationBar.appearance().barTintColor = UIColor(displayP3Red: 47/255, green: 54/255, blue: 64/255, alpha: 0.8)
+//        UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        
         return true
     }
 
